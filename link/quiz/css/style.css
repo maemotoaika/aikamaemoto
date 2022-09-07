@@ -285,9 +285,9 @@ form {
   transform: skew(-15deg);
   color: #fff;
   border-radius: 0;
-  background-images: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
-  background-images: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
-  background-images: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
@@ -390,7 +390,7 @@ form {
   border: #fff;
   color: #08751a;
   border-radius: 0;
-  background-images: -webkit-gradient(
+  background-image: -webkit-gradient(
     linear,
     left top,
     right top,
@@ -409,7 +409,7 @@ form {
   content: "";
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  background-images: -webkit-gradient(
+  background-image: -webkit-gradient(
     linear,
     left top,
     right top,
@@ -417,8 +417,8 @@ form {
     color-stop(rgba(103, 240, 240, .3)),
     to(rgba(43, 134, 197, .3))
     );
-    background-images: -webkit-linear-gradient(left, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
-    background-images: linear-gradient(90deg, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
+    background-image: -webkit-linear-gradient(left, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
+    background-image: linear-gradient(90deg, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
   }
   .btn7 span {
     position: relative;
