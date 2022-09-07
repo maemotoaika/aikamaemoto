@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="white">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="practice-js-game">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GAME</title>
+  <!-- Place favicon.ico in the root directory -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div class="nav">
+        <h1 class="first"></h1>
+        <ul class="hidden fir"></ul>
+      </div>
+      <div class="nav">
+
+        <h1 class="second"></h1>
+        <ul class="hidden sec"></ul>
+      </div>
+      <div class="nav">
+        <h1 class="third"></h1>
+        <ul class="hidden thi"></ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section id="user" class="hidden">
+      <fieldset>
+        <form method="GET" action="user.php">
+          <ul>
+            <li>
+              <label for="id">ユーザーID：
+                <input type="text" name="id">
+              </label>
+            </li>
+            <li>
+              <label for="pass">パスワード：
+                <input type="text" name="pass">
+              </label>
+            </li>
+          </ul>
+        </form>
+      </fieldset>
+    </section>
+
+    <section id="setting" class="hidden">
+      <fieldset>
+        <p id="set-background"></p>
+        <p id="set-color"></p>
+        <p id="set-btn"></p>
+        <p id="set-time"></p>
+      </fieldset>
+    </section>
+
+
+    <section id="calender" class="hidden">
+      <fieldset>
+        <div class="flex">
+          <button id="prev">&lt;&lt;</button>
+          <span id="span"></span>
+          <button id="next">&gt;&gt;</button>
+        </div>
+        <table id="table"></table>
+      </fieldset>
+    </section>
+
+
+    <section id="quiz" class="hidden">
+      <p></p>
+      <div class="flex wrapper" role="alert">
+        <span id="timer">60</span>
+        <span id="question">question question question</span>
+        <span id="quiz-length"></span>
+      </div>
+      <div>
+        <input type="button" class="hidden">
+      </div>
+      <div class="wrapper grid" id="quiz-buttons"></div>
+    </section>
+  </main>
+
+
+  <footer>
+    <small><a href="../../index.html">PORTFOLIO_TOP</a></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
