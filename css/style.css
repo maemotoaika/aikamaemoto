@@ -1,44 +1,51 @@
-@charset "UTF-8";
+@charset "utf-8";
 
-div{
-	margin: 1rem;
+nav {
+  background: rgb(250, 244, 205);
+  width: 98%;
+  position: fixed;
+}
+nav ul {
   display: flex;
+  justify-content: space-around;
 }
-
-fieldset {
-  margin: 4%;
+nav li {
+  list-style-type: none;
 }
-
-li {
-	list-style-type: none;
-	margin-bottom: 1em;
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
-
-ol > li {
-	list-style-type: decimal;
-	margin-bottom: 0;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
-
-ul > li {
-	list-style-type: none;
+#top {
+  background: rgb(250, 244, 205);
+  height: 90vh;
 }
-
-a{
-	color: #5e78c1;
-	text-decoration: none;
+#plof-pg {
+  width: 10rem;
+  height: auto;
+  margin: 10%;
 }
-a:hover{
-	color: #b04188;
-	text-decoration: underline;
+.wrapper {
+  margin: 0 auto;
+  padding: 4%;
 }
-
-.error {
-	color: #FF0000;
+.center {
+  text-align: center;
+  line-height: 80vh;
 }
-
-fieldset .Google {
-  background-color: rgb(250, 223, 192);
+.left {
+  text-align: left;
+  padding-left: 5%;
 }
-fieldset .GitHub {
-  background-color: rgb(143, 141, 140);
+.right {
+  text-align: right;
+  padding-right: 5%;
+}
+footer {
+  background: rgb(250, 244, 205);
+  text-align: center;
 }
