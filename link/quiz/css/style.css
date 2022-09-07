@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+/* 共通------------------------------------- */
+html {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+body {
+  background: white url(../images/question-mark-3839456_640.jpg);
+  background-size: 100vw 100vh;
+  /* background-position-y: 15vh; */
+  background-repeat: no-repeat;
+  margin: 0;
+}
+section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4%;
+}
+p {
+  background: rgba(255, 255, 255, 0.8);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #FFFF00;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+footer {
+  display: block;
+  font-size: 3rem;
+}
+small a {
+  text-align: center;
+  font-size: small;
+  position: relative;
+  top: 80%;
+  left: 40%;
+  color: #FFFF00;
+}
+/* ヘッダー -------------------------------*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-block-end: .7em;
+  font-size: 1.3rem;
+  padding: 0 auto;
+}
+fieldset {
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  border: black 1px solid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav div {
+  border: black 1px solid;
+  padding: 4%;
+}
+#play {
+  line-height: 1.3rem;
+  font-size: .5em;
+  width: auto;
+}
+h3 {
+  font-size: 1em;
+  margin: 0;
+}
+/* クイズ ---------------------------------*/
+button:hover {
+  color: #FFFF00;
+}
+#timer, #quiz-length {
+  background: rgba(8, 8, 8, .5);
+  border-radius: 50%;
+  width: 7rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 100%;
+}
+#question {
+  background: rgba(8, 8, 8, .5);
+  position: relative;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  height: 4rem;
+  font-size: 100%;
+  line-height: 150%;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1em;
+  margin: 0 2%;
+  padding: 1rem;
+}
+.quiz-btn {
+  width: 100%;
+  height: 25vh;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 150%;
+  position: relative;
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+/* 設定 ------------------------------ */
+.set-background, .set-color, .set-btn, .set-time {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1em;
+}
+label {
+  background: url(images/quiz1.jpg) top cover no-repeat;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+input {
+  display: none;
+}
+form {
+  display: contents;
+  border: none;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+/* 文字色--------------- */
+.black {
+  cursor: pointer;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #000;
+	text-shadow: 
+  0 0 0.10em #FFF,
+  0 0 0.15em #FFF,
+  0 0 0.80em #FFF,
+  0 0 1.00em #FFF;
+}
+.white {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 
+  0 0 0.10em #000,
+  0 0 0.15em #000,
+  0 0 0.80em #000,
+  0 0 1.00em #000;
+}
+.red {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #000;
+  text-shadow: 
+  0 0 0.10em red,
+  0 0 0.15em red,
+  0 0 0.80em red,
+  0 0 1.00em red;
+}
+.blue {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 
+  0 0 0.10em #2962FF,
+  0 0 0.15em #2962FF,
+  0 0 0.80em #2962FF,
+  0 0 1.00em #2962FF;
+}
+.pink {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 
+  0 0 0.05em #F06292,
+  0 0 0.10em #F06292,
+  0 0 0.15em #F06292,
+  0 0 0.30em #F06292;
+  filter: saturate(80%);
+}
+.yellow {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: yellow;
+  text-shadow: 
+  0 0 0.05em #000,
+  0 0 0.10em #000,
+  0 0 0.15em #000,
+  0 0 0.30em #000;
+  filter: saturate(80%);
+}
+.green {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 
+  0 0 0.05em #2df7aa,
+  0 0 0.10em #2df7aa,
+  0 0 0.15em #2df7aa,
+  0 0 0.30em #2df7aa;
+  filter: saturate(80%);
+}
+.purple {
+  cursor: pointer;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 
+  0 0 0.05em purple,
+  0 0 0.10em purple,
+  0 0 0.15em purple,
+  0 0 0.30em purple;
+  filter: saturate(80%);
+}
+
+
+/* ボタン------------------ */
+/* ボタン１ */
+.btn1 {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #000;
+}
+.btn1:hover {
+  -webkit-box-shadow: -4px -4px 0 #000;
+  box-shadow: -4px -4px 0 #000;
+}
+/* ボタン２ */
+.btn2 {
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  border-radius: 0;
+  background-images: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+  background-images: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+  background-images: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+.btn2:hover {
+  -webkit-transform: skew(0);
+  transform: skew(0);
+  color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+/* ボタン３ */
+.btn3 {
+    margin-bottom: 12px;
+    padding: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 2px solid #000;
+    background: -webkit-radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%),
+    -webkit-radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%), rgba(249, 13, 13, .5);
+    background: radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%),
+    radial-gradient(#000 15%, rgba(0, 0, 0, 0) 16%), rgba(249, 13, 13, .5);
+    background-position: 0 0, 6px 6px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 12px 12px;
+  }
+  .btn3 span {
+    position: relative;
+    display: block;
+    padding: 1.25rem 3rem;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+  .btn3:hover {
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+  }
+  /* ボタン４ */
+  .btn4 {
+    position: relative;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+.btn4 span {
+  position: relative;
+}
+.btn4:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 250%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: blue;
+}
+.btn4:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* ボタン５ */
+.btn5 {
+  color: #000;
+  border-top: 4px solid rgba(245, 239, 42, .8);
+  border-right: 4px solid rgb(135, 131, 4);
+  border-bottom: 4px solid rgba(191, 186, 17, .8);
+  border-left: 4px solid rgba(245, 243, 191, .8);
+  border-radius: 0;
+  background: rgba(250, 244, 75, .8);
+}
+.btn5:hover {
+  color: #fff;
+  border-top: 4px solid rgb(135, 131, 4);
+  border-right: 4px solid rgba(245, 243, 191, .8);
+  border-bottom: 4px solid rgba(245, 239, 42, .8);
+  border-left: 4px solid rgba(191, 186, 17, .8);
+}
+/* ボタン６ */
+.btn6 {
+  /* padding: 3rem 4rem; */
+  color: #fff;
+  border: #fff;
+  border-radius: 100% 80px / 80px 100%;
+  background: rgba(248, 171, 166, .8);
+}
+.btn6:hover {
+  color: #000;
+  border-radius: 60% 80% / 100% 80%;
+}
+/* ボタン７ */
+.btn7 {
+  position: relative;
+  border: #fff;
+  color: #08751a;
+  border-radius: 0;
+  background-images: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(40%, rgba(63, 252, 202, .5)),
+    to(rgba(103, 240, 240, .5))
+  );
+  background: -webkit-linear-gradient(left, rgba(63, 252, 202, .5) 40%, rgba(103, 240, 240, .5) 100%);
+  background: linear-gradient(90deg, rgba(63, 252, 202, .5) 40%, rgba(103, 240, 240, .5) 100%);
+}
+.btn7:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-images: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(63, 252, 202, .3)),
+    color-stop(rgba(103, 240, 240, .3)),
+    to(rgba(43, 134, 197, .3))
+    );
+    background-images: -webkit-linear-gradient(left, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
+    background-images: linear-gradient(90deg, rgba(63, 252, 202, .5), rgba(103, 240, 240, .5), #2b86c5);
+  }
+  .btn7 span {
+    position: relative;
+    z-index: 1;
+  }
+  .btn7:hover {
+    color: #FFF;
+  }
+  .btn7:hover:after {
+    opacity: 0;
+  }
+
+/* カレンダー ------------------------------*/
+table {
+  border-collapse: separate;
+  border-spacing: 1rem;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
+th, td {
+  background: rgba(245, 234, 218, 0.5);
+  border: 1px solid #000;
+  border-radius: 50% 50%;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  margin: auto;
+}
+th {
+  background-color: rgba(245, 234, 218, 0.8);
+}
+th:first-child, td:first-child {
+  color: rgb(252, 3, 3);
+}
+th:last-child, td:last-child {
+  color: blue;
+}
+.thin {
+  color: rgba(0, 0, 0, .5);
+  text-shadow: none;
+}
+.thin:first-child {
+  color: rgba(252, 3, 3, .5);
+  text-shadow: none;
+}
+.thin:last-child {
+  color: rgba(13, 0, 255, .5);
+  text-shadow: none;
+}
+#span {
+  display: block;
+}
+#next, #prev{
+  background-color: rgba(245, 234, 218, 0.8);
+  border: 1px solid;
+}
+
+/* フローチャート---------------- */
+#flowchart {
+  text-decoration: none;
+  font-size: .5rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
