@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+div{
+	margin: 1rem;
+  display: flex;
+}
+
+fieldset {
+  margin: 4%;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 1em;
+}
+
+ol > li {
+	list-style-type: decimal;
+	margin-bottom: 0;
+}
+
+ul > li {
+	list-style-type: none;
+}
+
+a{
+	color: #5e78c1;
+	text-decoration: none;
+}
+a:hover{
+	color: #b04188;
+	text-decoration: underline;
+}
+
+.error {
+	color: #FF0000;
+}
+
+fieldset .Google {
+  background-color: rgb(250, 223, 192);
+}
+fieldset .GitHub {
+  background-color: rgb(143, 141, 140);
+}
