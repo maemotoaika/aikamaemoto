@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/</loc>
+  <priority>1.0</priority>
+  <lastmod>2022-09-08T09:47:44+09:00</lastmod>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/blog.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/contact.html</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-09-08T09:47:44+09:00</lastmod>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/quiz/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-09-08T09:47:45+09:00</lastmod>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/post/contactForm.php</loc>
+  <priority>0.7</priority>
+  <lastmod>2022-09-08T09:47:45+09:00</lastmod>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/site-plan/site-map.pdf</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/site-plan/site-process.pdf</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/site-plan/wire-frame.pdf</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/index.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2022-09-08T09:47:44+09:00</lastmod>
+</url>
+<url>
+  <loc>https://maemotoaika.github.io/portfolio/link/pancake/post/index.html</loc>
+  <priority>0.6</priority>
+</url>
+
+</urlset>
